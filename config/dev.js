@@ -1,7 +1,7 @@
 const path = require('path');
 module.exports = {
 	mode: 'development',
-	entry: './src/app.js',
+	entry: './src/app',
 	output: {
 		path: path.resolve(__dirname, '../dist'),
 		filename: 'js/app.js'
@@ -19,12 +19,7 @@ module.exports = {
 		rules: [
 			{
 				test: /\.ts$/, include: path.resolve(__dirname, '../src'),
-				use: {
-					loader: 'awesome-typescript-loader',
-					options: {
-					  experimentalDecorators: true,
-					}
-				},
+				use: 'awesome-typescript-loader',
 			},
 			{
 				test: /\.js$/, exclude: /node_modules/, include: path.resolve(__dirname, '../src'),
@@ -54,5 +49,8 @@ module.exports = {
 			// 	include: path.resolve(__dirname, '../src')
 			// }
 		]
-	}
+	},
+	resolve: {
+		extensions: ['.ts', '.js', '.json', '*']
+	},
 }

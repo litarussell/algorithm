@@ -1,12 +1,14 @@
 {
     "compilerOptions": {
-        "module": "es6",
+        "module": "commonjs",
         "allowJs": true,
         "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
         "sourceMap": true,
-        "target": "es2017"
+        "experimentalDecorators": true,
+        "target": "es5",
+        "outDir": "./dist/js"
     },
     "include": [
         "./src/"

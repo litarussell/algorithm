@@ -47,12 +47,12 @@ export default abstract class Heap {
     }
 
 
-    protected create(arr: Array<number>): void {
+    create(arr: Array<number>): void {
         for(let i = 0; i < this.heap.length && i < arr.length; i++) {
             this.insert(arr[i]);
         }
     }
-    protected insert(v: number = 0) {
+    insert(v: number = 0) {
         if (this.count == 0) {
             this.heap[0] = v;
             this.count = 1;
@@ -62,16 +62,16 @@ export default abstract class Heap {
             // console.log(this.heap);
         }
     }
-    protected pop(): number {
+    pop(): number {
         const max = this.heap[0];
         this.heap[0] = this.heap[--this.count];
         this.sink(0);
         return max;
     }
 
-    protected isEmpty() { return this.count === 0; }
-    protected length() { return this.count; }
-    protected get(index: number) { return this.heap[index]; }
+    isEmpty() { return this.count === 0; }
+    length() { return this.count; }
+    get(index: number) { return this.heap[index]; }
     
     
     test() {

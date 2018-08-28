@@ -1,5 +1,5 @@
 // import Test from './decorator';
-import {MaxHeap, MinHeap} from './DataStructure/index.js';
+import {MaxHeap, MinHeap} from './DataStructure/index';
 
 
 let minHeap = new MinHeap(7);

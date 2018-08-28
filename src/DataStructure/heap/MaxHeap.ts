@@ -1,4 +1,4 @@
-import Heap from './Heap.ts';
+import Heap from './Heap';
 
 export default class MaxHeap extends Heap  {
     constructor(size: number) {

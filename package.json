@@ -1,0 +1,29 @@
+{
+  "name": "algorithm-learn",
+  "version": "1.0.0",
+  "description": "学习算法",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --config ./config/dev.js --display-modules --progress --colors --display-reasons",
+    "build": "webpack --config ./config/product.js --display-modules --progress --colors --display-reasons"
+  },
+  "keywords": [
+    "js",
+    "algorithm"
+  ],
+  "author": "lita",
+  "license": "ISC",
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-preset-env": "^1.7.0",
+    "typescript": "^2.9.2",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "dependencies": {}
+}

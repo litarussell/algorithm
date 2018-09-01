@@ -8,13 +8,12 @@
         "sourceMap": true,
         "experimentalDecorators": true,
         "target": "es5",
-        "outDir": "./dist/js"
+        "outDir": "./dist/debug"
     },
     "include": [
         "./src/"
     ],
     "exclude": [
         "node_modules",
-        "**/*.spec.ts"
     ]
 }

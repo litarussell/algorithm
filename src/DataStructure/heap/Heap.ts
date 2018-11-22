@@ -59,7 +59,6 @@ export default abstract class Heap {
         } else {
             this.heap[this.count++] = v;    // 新插入的数据放到堆的最后
             this.swim();                    // 上浮
-            // console.log(this.heap);
         }
     }
     pop(): number {

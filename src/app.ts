@@ -1,11 +1,20 @@
 // import Test from './decorator';
-import {MaxHeap, MinHeap, Selection, Insertion, BST} from './DataStructure/index';
+import {MaxHeap, MinHeap, Selection, Insertion, BST, Node} from './DataStructure/index';
 
 console.log('---------------BST-----------------');
-let bst: BST = new BST(1)
-bst.InsertBST(2)
-bst.InsertBST(0)
+let bst: BST = new BST()
 bst.InsertBST(3)
+bst.InsertBST(1)
+bst.InsertBST(5)
+bst.InsertBST(2)
+bst.InsertBST(4)
+bst.InsertBST(6)
+
+consoleTree(bst.root)
+
+bst.DelBST(6)
+console.log('-------')
+consoleTree(bst.root)
 
 console.log(bst)
 
@@ -33,3 +42,19 @@ minHeap.create([2,3,1,4,5,6,7]);
 minHeap.test();
 console.log('最小值', minHeap.pop(), minHeap.pop());
 minHeap.test();
+
+function consoleTree(tree: Node) {
+    let queue: Array<Node> = []
+    queue.push(tree)
+    while(queue.length) {
+        let q = []
+        let arr = queue.map(i => i.data)
+        console.log(...arr)
+        while(queue.length) {
+            let node: Node = queue.shift()
+            if (node.lchild) q.push(node.lchild)
+            if (node.rchild) q.push(node.rchild)
+        }
+        queue = q
+    }
+}

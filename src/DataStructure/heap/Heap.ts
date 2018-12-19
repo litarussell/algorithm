@@ -7,6 +7,7 @@ export default abstract class Heap {
         this.count = 0;
     }
 
+    // 返回true就要进行交换
     abstract compare(a: number, b: number): Boolean
 
 

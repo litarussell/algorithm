@@ -1,8 +1,16 @@
 // import Test from './decorator';
-import {MaxHeap, MinHeap, Selection, Insertion} from './DataStructure/index';
+import {MaxHeap, MinHeap, Selection, Insertion, BST} from './DataStructure/index';
+
+console.log('---------------BST-----------------');
+let bst: BST = new BST(1)
+bst.InsertBST(2)
+bst.InsertBST(0)
+bst.InsertBST(3)
+
+console.log(bst)
+
 
 let list: Array<number> = [2,4,1,5,6,2,5,6,8,234,53,5,0];
-
 
 console.log('---------------插入排序-----------------');
 (new Insertion()).sort(list);

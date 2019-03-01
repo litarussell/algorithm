@@ -1,4 +1,4 @@
-import Node from '../common/node'
+import Node from '../BST/node'
 abstract class AVLHandle {
     public abstract root: Node
     // 右旋
@@ -17,6 +17,14 @@ abstract class AVLHandle {
         p.lchild = node
         return p
     }
+    // // 先左后右旋
+    // private _lr(node: Node): Node {
+
+    // }
+    // // 先右后左旋
+    // private _rl(node: Node): Node {
+
+    // }
 }
 
 export default class AVL extends AVLHandle {

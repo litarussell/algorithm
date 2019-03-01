@@ -1,4 +1,4 @@
-import Node from '../common/node'
+import Node from './node'
 
 abstract class BSTHandle {
     public abstract root: Node
@@ -39,6 +39,36 @@ abstract class BSTHandle {
             return true 
         } else if (key < v) return this._del(node.lchild, node, key, true)
         else return this._del(node.rchild, node, key, false)
+    }
+    // 删除节点 非递归
+    private del (node: Node, key: number): boolean {
+        if (!node) return false
+        if (node.data == key) {
+            this.root = null
+            return true
+        }
+        let stack: Array<Node> = [node]
+        let f_stack: Array<Node> = [node]
+        while (stack.length) {
+            let p: Node = stack.pop()
+            if (p.data === key) {
+                let l: boolean = p.lchild == null
+                let r: boolean = p.rchild == null
+                if (l && r) {
+
+                } else if (l) {
+
+                } else if (r) {
+
+                } 
+            } else if (p.data < key) {
+                stack.push(p.rchild)
+                f_stack.push(p.rchild)
+            } else {
+                stack.push(p.lchild)
+                f_stack.push(p.lchild)
+            }
+        }
     }
     // 添加节点
     InsertBST (key: number): boolean {

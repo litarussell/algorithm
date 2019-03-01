@@ -3,10 +3,10 @@ import MinHeap from './heap/MinHeap'
 import Selection from './sort/Selection'
 import Insertion from './sort/Insertion'
 import BST from './BST'
-import Node from './common/node'
+import BstNode from './BST/node'
 
 export {
     MaxHeap, MinHeap,
     Selection, Insertion,
-    BST, Node
+    BST, BstNode
 };

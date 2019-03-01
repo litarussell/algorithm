@@ -1,4 +1,4 @@
-import {BST, Node} from '../DataStructure/'
+import { BST, BstNode as Node } from '../DataStructure/'
 
 export default {
     name: 'bst测试',

@@ -7,6 +7,15 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "调试当前ts程序",
+            "program": "/usr/local/bin/ts-node",
+            "args": ["${file}"],
+            "cwd": "${workspaceFolder}",
+            "protocol": "inspector"
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "启动程序",
             "program": "${workspaceFolder}/dist/debug/app.js",
             "preLaunchTask": "tsc"

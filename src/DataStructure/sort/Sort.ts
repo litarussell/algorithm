@@ -1,13 +1,13 @@
 // import './Comparable';
 
 export default abstract class Sort {
-    constructor() {}
+  constructor() {}
 
-    abstract sort(list: Array<number>): void
+  abstract sort(list: Array < number > ): void
 
-    protected swap(list: Array<number>, i: number, j: number): void {
-        let temp: number = list[i];
-        list[i] = list[j];
-        list[j] = temp;
-    }
+  protected swap(list: Array < number > , i: number, j: number): void {
+    let temp: number = list[i];
+    list[i] = list[j];
+    list[j] = temp;
+  }
 }

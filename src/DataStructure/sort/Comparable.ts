@@ -1,3 +1,3 @@
 interface Comparable {
-    compareTo<T>(a: T, b: T): boolean;
+  compareTo<T>(a: T, b: T): boolean
 }

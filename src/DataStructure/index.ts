@@ -9,4 +9,4 @@ export {
     MaxHeap, MinHeap,
     Selection, Insertion,
     BST, BstNode
-};
+}

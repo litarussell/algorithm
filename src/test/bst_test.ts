@@ -4,16 +4,16 @@ export default {
   name: 'bst测试',
   test () {
     let bst: BST = new BST()
-    bst.InsertBST(3)
-    bst.InsertBST(1)
-    bst.InsertBST(5)
-    bst.InsertBST(2)
-    bst.InsertBST(4)
-    bst.InsertBST(6)
+    bst.insert(3)
+    bst.insert(1)
+    bst.insert(5)
+    bst.insert(2)
+    bst.insert(4)
+    bst.insert(6)
 
     consoleTree(bst.root)
 
-    bst.DelBST(6)
+    bst.del(6)
     console.log('-------')
     consoleTree(bst.root)
 

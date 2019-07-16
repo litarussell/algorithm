@@ -6,7 +6,14 @@ export default function (str1: string, str2: string): number {
   if (str1.length < str2.length) return -1
   return match(str1, str2, next(str2), 0, 0)
 }
-
+/**
+ * 
+ * @param str1 待匹配的字符串
+ * @param str2 用于匹配的字符串
+ * @param next 滑动匹配数组
+ * @param k 当前需要用于匹配的字符串索引
+ * @param index 当前带匹配字符串索引
+ */
 function match (str1: string, str2: string, next: Array<number>, k: number, index: number): number {
   if (str1.length < str2.length) return -1
   for (let i = 0; i < str2.length; i++) {

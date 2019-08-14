@@ -19,18 +19,18 @@ module.exports = {
 		rules: [
 			{
 				test: /\.ts$/, include: path.resolve(__dirname, '../src'),
-				use: 'awesome-typescript-loader',
+				use: 'ts-loader',
 			},
-			{
-				test: /\.js$/, exclude: /node_modules/, include: path.resolve(__dirname, '../src'),
-				use: {
-					loader: 'babel-loader',
-					options: {
-						presets: ['env'],
-						plugins: ["transform-decorators-legacy"]
-					}
-				}
-			},
+			// {
+			// 	test: /\.js$/, exclude: /node_modules/, include: path.resolve(__dirname, '../src'),
+			// 	use: {
+			// 		loader: 'babel-loader',
+			// 		options: {
+			// 			presets: ['env'],
+			// 			plugins: ["transform-decorators-legacy"]
+			// 		}
+			// 	}
+			// },
 			// {
 			// 	test: /\.css$/,
 			// 	use: [

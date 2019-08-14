@@ -13,18 +13,7 @@ module.exports = {
 				test: /\.ts$/,
 				exclude: /node_modules/,
 				use: 'awesome-typescript-loader'
-			},
-			{
-				test: /\.js$/,
-				include: path.resolve(__dirname, '../src'),
-				use: {
-					loader: 'babel-loader',
-					options: {
-						presets: ['env'],
-						plugins: ["transform-decorators-legacy"]
-					}
-				}
-			},
+			}
 		]
 	},
 	resolve: {

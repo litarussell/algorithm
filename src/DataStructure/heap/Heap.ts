@@ -2,8 +2,8 @@ export default abstract class Heap {
   private heap: Array < number > ;
   private count: number;
 
-  constructor(size: number) {
-    this.heap = new Array(size);
+  constructor(size?: number) {
+    this.heap = new Array(size || 0);
     this.count = 0;
   }
 
@@ -48,12 +48,14 @@ export default abstract class Heap {
   }
 
 
-  create(arr: Array < number > ): void {
+  create(arr: Array <number> ): Heap {
+    if (!this.heap.length && arr.length) this.heap = new Array(arr.length)
     for (let i = 0; i < this.heap.length && i < arr.length; i++) {
       this.insert(arr[i]);
     }
+    return this
   }
-  insert(v: number = 0) {
+  insert(v: number) {
     if (this.count == 0) {
       this.heap[0] = v;
       this.count = 1;
@@ -61,6 +63,7 @@ export default abstract class Heap {
       this.heap[this.count++] = v; // 新插入的数据放到堆的最后
       this.swim(); // 上浮
     }
+    return this
   }
   pop(): number {
     const max = this.heap[0];

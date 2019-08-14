@@ -1,7 +1,7 @@
 import Heap from './Heap';
 
 export default class MaxHeap extends Heap {
-  constructor(size: number) {
+  constructor(size?: number) {
     super(size);
   }
   compare(a: number, b: number) {

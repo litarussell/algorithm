@@ -1,5 +1,6 @@
 import bst_test from './bst_test'
 import avl_test from './avl_test'
+import union_find from './union-find_test'
 
 import heap_test from './heap_test'
 import insert_test from './insert_sort_test'
@@ -10,6 +11,7 @@ import merge_test from './merge_sort_test'
 import match_test from './match_test'
 
 export default [
+  union_find,
   merge_test,
   avl_test,
   match_test,

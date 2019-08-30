@@ -7,14 +7,15 @@ import ShellSort from './sort/Shell'
 import QuickSort from './sort/Quick'
 import MergeSort from './sort/Merge'
 
-import BST from './BST'
-import BstNode from './BST/node'
-import AVL from './AVL'
-import AvlNode from './AVL/node'
+import BST from './tree/BST'
+import BstNode from './tree/BST/node'
+import AVL from './tree/AVL'
+import AvlNode from './tree/AVL/node'
+import UnionFind from './tree/uniod-find'
 
 export {
     MaxHeap, MinHeap,
     Selection, Insertion, ShellSort, QuickSort, MergeSort,
-    BST, BstNode,
-    AVL, AvlNode
+
+    BST, BstNode, AVL, AvlNode, UnionFind
 }

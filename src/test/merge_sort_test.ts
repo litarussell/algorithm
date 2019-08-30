@@ -1,4 +1,4 @@
-import { MergeSort } from '../DataStructure'
+import { MergeSort } from '../code'
 
 let list: Array<number> = [8, 4, 5, 7, 1, 3, 6, 2]
 

@@ -1,4 +1,4 @@
-import {MaxHeap, MinHeap} from '../DataStructure/'
+import {MaxHeap, MinHeap} from '../code'
 
 let minHeap = new MinHeap(7)
 let maxHeap = new MaxHeap(9)

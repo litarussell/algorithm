@@ -1,4 +1,4 @@
-import { QuickSort } from '../DataStructure'
+import { QuickSort } from '../code'
 
 let list: Array<number> = [2,4,1,5,6,2,5,6,8,234,53,5,0]
 // let list: Array<number> = [2,4,1,5,6]

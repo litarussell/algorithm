@@ -1,4 +1,4 @@
-import {Selection} from '../DataStructure'
+import {Selection} from '../code'
 
 let list: Array<number> = [2,4,1,5,6,2,5,6,8,234,53,5,0]
 

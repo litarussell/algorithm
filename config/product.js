@@ -8,13 +8,12 @@ module.exports = {
 		filename: 'js/app.js'
 	},
 	module: {
-		rules: [
-			{
-				test: /\.ts$/,
-				exclude: /node_modules/,
-				use: 'awesome-typescript-loader'
-			}
-		]
+		rules: [{
+			test: /\.ts$/,
+			include: path.resolve(__dirname, '../src'),
+			exclude: /node_modules/,
+			use: 'ts-loader',
+		}]
 	},
 	resolve: {
 		extensions: ['.ts', '.js', '.json', '*']

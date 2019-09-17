@@ -1,7 +1,7 @@
-import { MaxHeap, MinHeap } from '../src/DataStructure'
+import { MaxHeap, MinHeap } from '../src/code'
 import { strictEqual, deepStrictEqual } from 'assert'
 
-function generateRandomArray (length: Array<number>, range: Array<number>) {
+function generateRandomArray(length: Array<number>, range: Array<number>) {
 	let len = generateNumber(length[0], length[1])
 	let arr = new Array(len)
 	for (let i = 0; i < len; i++) {
@@ -10,17 +10,17 @@ function generateRandomArray (length: Array<number>, range: Array<number>) {
 	return arr
 }
 
-function generateNumber (a : number, b : number) {
+function generateNumber(a: number, b: number) {
 	return Math.floor(Math.random() * (b - a + 1) + a)
 }
 
 describe('#heap.test.js', () => {
 
-  describe('#MaxHeap()', () => {
+	describe('#MaxHeap()', () => {
 		// before(() => {
-			// console.log('-- 测试大堆 --')
-			// console.log('大堆: ', arr, arr.length)
-			// maxHeap.test()
+		// console.log('-- 测试大堆 --')
+		// console.log('大堆: ', arr, arr.length)
+		// maxHeap.test()
 		// })
 		// after(() => console.log('大堆测试完成'))
 		// beforeEach(() => {})
@@ -48,7 +48,7 @@ describe('#heap.test.js', () => {
 			maxHeap.create(arr)
 			let actual = [], expected = []
 			let len = arr.length
-			while(len > 0) {
+			while (len > 0) {
 				expected.push(maxHeap.pop(), maxHeap.length())
 				let max = Math.max(...arr)
 				let i = arr.indexOf(max)
@@ -62,9 +62,9 @@ describe('#heap.test.js', () => {
 
 	describe('#MinHeap()', () => {
 		// before(() => {
-			// console.log('-- 测试小堆 --')
-			// console.log('小堆: ', arr, arr.length)
-			// minHeap.test()
+		// console.log('-- 测试小堆 --')
+		// console.log('小堆: ', arr, arr.length)
+		// minHeap.test()
 		// })
 		// after(() => console.log('小堆测试完成'))
 		// beforeEach(() => {})
@@ -92,7 +92,7 @@ describe('#heap.test.js', () => {
 			minHeap.create(arr)
 			let actual = [], expected = []
 			let len = arr.length
-			while(len > 0) {
+			while (len > 0) {
 				expected.push(minHeap.pop(), minHeap.length())
 				let max = Math.min(...arr)
 				let i = arr.indexOf(max)
@@ -103,5 +103,5 @@ describe('#heap.test.js', () => {
 			deepStrictEqual(expected, actual)
 		})
 	})
-	
+
 })

@@ -16,9 +16,9 @@ module.exports = {
 		open: true
 	},
 	module: {
-		rules: [
-			{
-				test: /\.ts$/, include: path.resolve(__dirname, '../src'),
+		rules: [{
+				test: /\.ts$/,
+				include: path.resolve(__dirname, '../src'),
 				use: 'ts-loader',
 			},
 			// {

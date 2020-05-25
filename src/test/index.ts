@@ -7,6 +7,7 @@ import insert_test from './insert_sort_test'
 import select_test from './select_sort_test'
 import quick_test from './quick_sort_test'
 import merge_test from './merge_sort_test'
+import shell_test from './shell_sort_test'
 
 import match_test from './match_test'
 
@@ -16,6 +17,7 @@ export default [
   avl_test,
   match_test,
   bst_test,
+  shell_test,
   insert_test,
   select_test,
   quick_test,

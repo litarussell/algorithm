@@ -8,6 +8,7 @@ import QuickSort from './sort/Quick'
 import MergeSort from './sort/Merge'
 
 import BST from './tree/BST'
+import Trie from './tree/trie'
 import BstNode from './tree/BST/node'
 import AVL from './tree/AVL'
 import AvlNode from './tree/AVL/node'
@@ -17,5 +18,5 @@ export {
     MaxHeap, MinHeap,
     Selection, Insertion, ShellSort, QuickSort, MergeSort,
 
-    BST, BstNode, AVL, AvlNode, UnionFind
+    BST, Trie, BstNode, AVL, AvlNode, UnionFind
 }

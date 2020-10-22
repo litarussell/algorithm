@@ -16,21 +16,21 @@ module.exports = {
 		open: true
 	},
 	module: {
-		rules: [
-			{
-				test: /\.ts$/, include: path.resolve(__dirname, '../src'),
-				use: 'awesome-typescript-loader',
+		rules: [{
+				test: /\.ts$/,
+				include: path.resolve(__dirname, '../src'),
+				use: 'ts-loader',
 			},
-			{
-				test: /\.js$/, exclude: /node_modules/, include: path.resolve(__dirname, '../src'),
-				use: {
-					loader: 'babel-loader',
-					options: {
-						presets: ['env'],
-						plugins: ["transform-decorators-legacy"]
-					}
-				}
-			},
+			// {
+			// 	test: /\.js$/, exclude: /node_modules/, include: path.resolve(__dirname, '../src'),
+			// 	use: {
+			// 		loader: 'babel-loader',
+			// 		options: {
+			// 			presets: ['env'],
+			// 			plugins: ["transform-decorators-legacy"]
+			// 		}
+			// 	}
+			// },
 			// {
 			// 	test: /\.css$/,
 			// 	use: [

@@ -1,4 +1,4 @@
-import { AVL, AvlNode as Node } from '../DataStructure/'
+import { AVL, AvlNode as Node } from '../code'
 
 export default {
   name: 'avl自平衡二叉搜索树测试',

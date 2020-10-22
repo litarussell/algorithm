@@ -1,5 +1,5 @@
-import bf from '../algorithm/match/bf'
-import kmp, { next } from '../algorithm/match/kmp'
+import bf from '../code/match/bf'
+import kmp, { next } from '../code/match/kmp'
 
 let group = [
   {
